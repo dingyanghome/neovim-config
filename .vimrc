@@ -1,6 +1,8 @@
 "将leader键设置成空格键
 let mapleader=" "
 
+set encoding=utf-8
+
 "开启高亮
 syntax on
 
@@ -45,9 +47,31 @@ set ignorecase
 "智能大小写搜索,全小写都能搜到,大小写分离精准搜索
 set smartcase
 
+"取消s键映射
+map s <nop>
+"向右分屏
+map sl :set splitright<CR>:vsplit<CR>
+"向左分屏
+map sh :set nosplitright<CR>:vsplit<CR>
+"向下分屏
+map sj :set splitbelow<CR>:split<CR>
+"向上分屏
+map sk :set nosplitbelow<CR>:split<CR>
 
+"分屏间移动
+map <LEADER>l <C-w>l
+map <LEADER>h <C-w>h
+map <LEADER>j <C-w>j
+map <LEADER>k <C-w>k
 
+"分屏大小调节
+map <up> :res +5<CR>
+map <down> :res -5<CR>
+map <left> :vertical resize+5<CR>
+map <right> :vertical resize-5<CR>
 
-
-
+"标签页
+map tt :tabe<CR>
+map th :-tabnext<CR>
+map tl :+tabnext<CR>
 
