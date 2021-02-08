@@ -1,4 +1,4 @@
-"将leader键设置成空格键
+"将空格键设置成leader键
 let mapleader=" "
 
 set encoding=utf-8
