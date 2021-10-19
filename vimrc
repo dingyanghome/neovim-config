@@ -2,6 +2,8 @@
 let mapleader=" "
 
 set encoding=utf-8
+set termencoding=utf-8
+set fileencodings=utf-8,gbk,latin1
 
 "开启高亮
 syntax on
@@ -14,7 +16,7 @@ set expandtab
 set nu
 
 "当前行显示下划提示线
-set cursorline
+"set cursorline
 
 "在当前页面显示一行的所有内容,即自动换行
 set wrap
@@ -26,8 +28,8 @@ set wildmenu
 set showcmd
 
 "快速移动
-noremap J 10j
-noremap K 10k
+noremap J 5j
+noremap K 5k
 
 "搜索高亮
 set hlsearch
